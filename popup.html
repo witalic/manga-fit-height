@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img src="icons/icon48.png" alt="" width="24" height="24" />
+        <span data-i18n="appName">Manga Fit Height</span>
+      </div>
+      <label class="lang">
+        <span data-i18n="lang_label">Language</span>
+        <select id="lang">
+          <option value="auto" data-i18n="lang_auto">Auto</option>
+          <option value="en">English</option>
+          <option value="uk">Українська</option>
+        </select>
+      </label>
+    </header>
+
+    <div class="site">
+      <span data-i18n="site">Site</span>: <b id="host">—</b>
+      <label class="switch">
+        <input type="checkbox" id="enabled" />
+        <span class="track"></span>
+      </label>
+    </div>
+
+    <!-- TARGET -->
+    <section class="card">
+      <h2 data-i18n="sec_target">Target images</h2>
+      <button id="pick" class="primary block" data-i18n="pick">Pick an image on the page</button>
+      <p class="hint" data-i18n="pick_hint">Click directly on a manga page image.</p>
+
+      <label class="fld" for="selector" data-i18n="selector_label">CSS selector</label>
+      <input type="text" id="selector" spellcheck="false" data-i18n-ph="selector_ph" />
+      <p class="hint" id="count">—</p>
+      <p class="warn" id="broad" data-i18n="broad_warn">Selector is too broad.</p>
+
+      <label class="fld" for="minWidth" data-i18n="minwidth_label">Min image width, px</label>
+      <input type="number" id="minWidth" value="300" min="0" max="3000" step="50" />
+    </section>
+
+    <!-- FIT -->
+    <section class="card">
+      <h2 data-i18n="sec_fit">Fit &amp; layout</h2>
+      <label class="fld" for="offset" data-i18n="offset_label">Fixed header height, px</label>
+      <div class="inline">
+        <input type="number" id="offset" value="0" min="0" max="400" step="2" />
+        <button id="detect" data-i18n="detect">Detect</button>
+      </div>
+      <p class="hint" data-i18n="offset_hint">Used as the alignment offset.</p>
+    </section>
+
+    <!-- FOCUS -->
+    <section class="card">
+      <h2 data-i18n="sec_focus">Focus &amp; navigation</h2>
+      <label class="opt"><input type="checkbox" id="focus" checked /><span data-i18n="focus">Focus mode</span></label>
+      <label class="opt"><input type="checkbox" id="keys" checked /><span data-i18n="keys">Arrow keys navigate</span></label>
+      <label class="opt"><input type="checkbox" id="autoFocus" /><span data-i18n="autofocus">Auto-focus current page</span></label>
+    </section>
+
+    <!-- DIMMING -->
+    <section class="card">
+      <h2 data-i18n="sec_dim">Dimming</h2>
+      <label class="opt"><input type="checkbox" id="dim" checked /><span data-i18n="dim">Dim the rest of the page</span></label>
+      <div id="dimBox">
+        <label class="fld" for="dimLevel"><span id="dimLevelLabel">Intensity: 85%</span></label>
+        <input type="range" id="dimLevel" min="0" max="100" step="5" value="85" />
+        <label class="opt"><input type="checkbox" id="dimInactive" /><span data-i18n="diminactive">Fade neighbouring pages</span></label>
+      </div>
+    </section>
+
+    <!-- ADVANCED -->
+    <section class="card">
+      <h2 data-i18n="sec_advanced">Advanced</h2>
+      <label class="opt"><input type="checkbox" id="unclamp" checked /><span data-i18n="unclamp">Un-clamp parent containers</span></label>
+      <div class="row2">
+        <button id="diagBtn" data-i18n="diag">Diagnostics</button>
+        <button id="clear" data-i18n="reset">Reset site</button>
+      </div>
+      <pre id="diag"></pre>
+    </section>
+
+    <footer class="footer">
+      <button id="save" class="primary" data-i18n="save">Save</button>
+      <button id="focusNow" data-i18n="focus_now">Focus now</button>
+    </footer>
+    <div id="status"></div>
+
+    <script src="i18n.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

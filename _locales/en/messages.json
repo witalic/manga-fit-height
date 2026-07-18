@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Manga Fit Height",
+    "description": "Extension name"
+  },
+  "appDesc": {
+    "message": "Fit manga page images to the screen height in reader mode. Per-site, with element picker, focus mode and dimming.",
+    "description": "Extension description"
+  }
+}

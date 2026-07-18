@@ -1,0 +1,98 @@
+:root {
+  --accent: #e0245e;
+  --accent-2: #c2184a;
+  --bg: #14131a;
+  --card: #1d1c24;
+  --text: #f5f6fa;
+  --sub: #aab;
+  --line: #2c2b34;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+a { color: var(--accent); }
+
+.hero {
+  text-align: center;
+  padding: 64px 0 48px;
+  background:
+    radial-gradient(600px 300px at 50% -40px, rgba(224, 36, 94, 0.35), transparent 70%),
+    linear-gradient(180deg, #201f28, var(--bg));
+  border-bottom: 1px solid var(--line);
+}
+.logo { border-radius: 16px; box-shadow: 0 8px 30px rgba(224, 36, 94, 0.35); }
+.hero h1 { font-size: 40px; margin: 16px 0 8px; }
+.tag { color: var(--sub); max-width: 620px; margin: 0 auto 24px; font-size: 18px; }
+
+.cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.primary:hover { filter: brightness(1.08); }
+
+.shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 44px 0;
+}
+.shots img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+@media (max-width: 720px) { .shots { grid-template-columns: 1fr; } }
+
+section { margin: 40px 0; }
+h2 { font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+
+.features ul { list-style: none; padding: 0; }
+.features li { padding: 8px 0 8px 26px; position: relative; }
+.features li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 15px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.install ol { padding-left: 20px; }
+code, kbd {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1px 6px;
+  font: 13px ui-monospace, Menlo, monospace;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+  color: var(--sub);
+  text-align: center;
+  font-size: 14px;
+}
+
+.doc { max-width: 760px; }
+.doc h1 { font-size: 30px; }
+.doc h2 { font-size: 20px; }
+.doc p, .doc li { color: #d7d8e0; }
+.back { display: inline-block; margin: 24px 0; }

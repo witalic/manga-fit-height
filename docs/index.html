@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manga Fit Height</title>
+    <meta name="description" content="Chrome/Edge extension that fits manga page images to your screen height. Per-site element picker, focus mode, keyboard navigation and dimming." />
+    <link rel="icon" href="assets/icon128.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <img class="logo" src="assets/icon128.png" alt="Manga Fit Height icon" width="72" height="72" />
+        <h1>Manga Fit Height</h1>
+        <p class="tag">Read manga at full screen height. Pick the page image once, and every chapter fits your window.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/witalic/manga-fit-height">View on GitHub</a>
+          <a class="btn" href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="shots">
+        <img src="assets/screenshot-1-setup.png" alt="Setup: pick an image and fit to height" />
+        <img src="assets/screenshot-2-reading.png" alt="Focus mode, keyboard navigation and dimming" />
+      </section>
+
+      <section class="features">
+        <h2>Features</h2>
+        <ul>
+          <li><b>Fit to height</b> — pages scale to the viewport height with the correct aspect ratio, no horizontal cropping.</li>
+          <li><b>Element picker</b> — click a page image; a stable CSS selector is generated and saved per site.</li>
+          <li><b>Min-width filter</b> — logos, avatars and banners are ignored automatically.</li>
+          <li><b>Focus mode</b> — scroll snaps each page fully into the window, with header-aware alignment.</li>
+          <li><b>Keyboard navigation</b> — <kbd>↑</kbd> <kbd>↓</kbd> <kbd>Space</kbd> move between pages.</li>
+          <li><b>Dimming</b> — darkens everything around the current page; optional fading of neighbours.</li>
+          <li><b>SPA-friendly</b> — keeps working across in-page (AJAX / pushState) page turns.</li>
+          <li><b>Localized UI</b> — English and Ukrainian, auto-detected with a manual switch.</li>
+        </ul>
+      </section>
+
+      <section class="install">
+        <h2>Install from source</h2>
+        <ol>
+          <li>Open <code>chrome://extensions</code> (or <code>edge://extensions</code>).</li>
+          <li>Enable <b>Developer mode</b>.</li>
+          <li><b>Load unpacked</b> → select the <code>manga-fit-height</code> folder.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© 2026 witalic · <a href="https://github.com/witalic/manga-fit-height/blob/main/LICENSE">MIT License</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

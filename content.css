@@ -1,0 +1,43 @@
+/* Element picker overlay */
+#mfh-picker-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  cursor: crosshair;
+  background: transparent;
+}
+
+#mfh-picker-highlight {
+  position: fixed;
+  z-index: 2147483645;
+  pointer-events: none;
+  border: 2px solid #e0245e;
+  background: rgba(224, 36, 94, 0.12);
+  box-sizing: border-box;
+  transition: all 0.05s linear;
+}
+
+#mfh-picker-hint,
+#mfh-toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  background: #111;
+  color: #fff;
+  font: 14px/1.4 system-ui, sans-serif;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  max-width: 80vw;
+  text-align: center;
+}
+
+#mfh-picker-hint {
+  top: 16px;
+}
+
+#mfh-toast {
+  bottom: 24px;
+}

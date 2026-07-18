@@ -1,0 +1,14 @@
+# Packaging output
+*.zip
+manga-fit-height.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Python artifacts from the icon generator
+__pycache__/
+*.pyc
