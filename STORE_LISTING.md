@@ -31,7 +31,7 @@ Suggested: Accessibility (or Productivity)
 
 ## Permission justifications (paste into the review form)
 - storage — Saves per-site settings (selector, thresholds, toggles, language) locally.
-- activeTab + scripting — Reads how many images the selector matches in the active tab and applies the fit styling when you use the popup.
+- activeTab — When you open the popup, identifies the site in the active tab so its saved settings can be loaded and sent to the page.
 - Host access (all sites) — Manga readers are hosted on many domains and the user enables the extension per site. The extension only restyles images; it does not read page content, cookies or credentials, and makes no network requests.
 
 ## Privacy

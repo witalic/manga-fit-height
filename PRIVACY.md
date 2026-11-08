@@ -1,6 +1,6 @@
 # Privacy Policy — Manga Fit Height
 
-_Last updated: 2026-07-18_
+_Last updated: 2026-11-08_
 
 ## Summary
 
@@ -22,8 +22,8 @@ anywhere else.
 ## Permissions and why they are needed
 
 - **storage** — to save your per-site settings.
-- **activeTab** / **scripting** — to read the selector matches in the current
-  tab and apply the styling when you interact with the popup.
+- **activeTab** — to identify the site in the current tab when you open the
+  popup, so its settings can be loaded and applied.
 - **host access (`<all_urls>`)** — manga readers live on many different domains,
   and you decide per site whether the extension is active. The extension only
   changes how images are displayed; it does not read page content, form data,
