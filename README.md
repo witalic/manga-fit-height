@@ -22,7 +22,7 @@ stretch (sites use different HTML structures).
 - **Dimming** — darkens everything around the current page; optional fading of
   neighbouring pages.
 - **SPA-friendly** — keeps working across in-page (AJAX/pushState) page turns.
-- **Localized UI** — English and Ukrainian, auto-detected with a manual switch.
+- **Localized UI** — English, Ukrainian, Japanese, Korean and Simplified Chinese, auto-detected with a manual switch.
 
 ## Install (from source)
 

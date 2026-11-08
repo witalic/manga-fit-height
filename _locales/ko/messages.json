@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Manga Fit Height",
+    "description": "Extension name"
+  },
+  "appDesc": {
+    "message": "만화 페이지 이미지를 화면 높이에 맞춰 표시합니다. 사이트별 설정, 요소 선택 도구, 포커스 모드, 어둡게 하기 지원.",
+    "description": "Extension description"
+  }
+}

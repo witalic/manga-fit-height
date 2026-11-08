@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Manga Fit Height",
+    "description": "Extension name"
+  },
+  "appDesc": {
+    "message": "漫画・マンガのページ画像を画面の高さに合わせて表示。サイトごとの設定、要素ピッカー、フォーカスモード、減光に対応。",
+    "description": "Extension description"
+  }
+}

@@ -16,6 +16,10 @@ body {
   font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
+/* CJK line breaking: Japanese by phrase, Korean only between words */
+:lang(ja) { word-break: auto-phrase; }
+:lang(ko) { word-break: keep-all; }
+
 /* Top bar */
 .topbar {
   position: sticky;

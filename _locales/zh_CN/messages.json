@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Manga Fit Height",
+    "description": "Extension name"
+  },
+  "appDesc": {
+    "message": "在阅读模式下将漫画页面图片缩放至屏幕高度。支持按网站设置、元素选择器、聚焦模式和背景调暗。",
+    "description": "Extension description"
+  }
+}

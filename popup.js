@@ -15,6 +15,7 @@ const save = (h, cfg) =>
 
 // ---------- i18n ----------
 function applyI18n() {
+  document.documentElement.lang = self.MFHi18n.htmlLang;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     el.textContent = t(el.dataset.i18n);
   });
